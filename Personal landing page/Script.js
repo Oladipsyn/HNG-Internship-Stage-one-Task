@@ -5,7 +5,7 @@ function getCurrentDayOfWeek(){
     return dayOfWeek;
 }
 
-function getCurrentUTCTime(params) {
+function getCurrentUTCTime() {
     const currentDate = new Date();
     const utcTime = currentDate.toUTCString();
     return utcTime;
@@ -15,6 +15,6 @@ document.getElementById("dayOfWeek").textContent = "Current Day of the week: " +
 document.getElementById("utcTime").textContent = "Current UTC Time: " + getCurrentUTCTime();
 
 
-// setInterval(updateDateTime, 1000);
+setInterval(getCurrentUTCTime, 1000);
 
 // updateDateTime();
